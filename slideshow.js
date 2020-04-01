@@ -9,7 +9,11 @@ var slideshow = {
             this.currentPhotoIndex++;
         } else {
             console.log('End of Slideshow');
+<<<<<<< HEAD
               this.pause();
+=======
+            this.pause();
+>>>>>>> async_BransonPerkins
         }
     },
 
@@ -33,12 +37,24 @@ var slideshow = {
         this.playInterval = setInterval(function() {
             self.nextPhoto()
         }, 2000)
+<<<<<<< HEAD
+=======
+        return slideshow.nextPhoto();
+>>>>>>> async_BransonPerkins
     },
 
     pause: function() {
         clearInterval(this.playInterval);
+<<<<<<< HEAD
     }
 
 }
 
 console.log(slideshow.play());
+=======
+    },
+
+}
+
+slideshow.play();
+>>>>>>> async_BransonPerkins
