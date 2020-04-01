@@ -9,7 +9,7 @@ var slideshow = {
             this.currentPhotoIndex++;
         } else {
             console.log('End of Slideshow');
-              this.pause();
+            this.pause();
         }
     },
 
@@ -33,12 +33,13 @@ var slideshow = {
         this.playInterval = setInterval(function() {
             self.nextPhoto()
         }, 2000)
+        return slideshow.nextPhoto();
     },
 
     pause: function() {
         clearInterval(this.playInterval);
-    }
+    },
 
 }
 
-console.log(slideshow.play());
+slideshow.play();
